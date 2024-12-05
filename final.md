@@ -64,13 +64,10 @@ Our team followed a **feature-branch workflow**:
 ---
 
 ### 3. Deployment  
-The project is Dockerized with:  
-- Dockerfiles for the frontend and backend.  
-- A `docker-compose` configuration for multi-container orchestration.  
 
-To deploy:  
-1. Clone the repo.  
-2. Run `docker-compose up`.  
+Right now, we can deploy our app using a NodeJS deployer that would be able to deploy a Node application. Our application was only able to be dockerized from a very high level so in the future, we'd want to try and dockerize the front and backend of our application in order to take advantage
+of the benefits of docker/containerization. This would allow the application to run consistently across different platforms and provide a failsafe in case of an erorr. If the backend has an error then it won't take down the whole application.
+
 
 ---
 
