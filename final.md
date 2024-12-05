@@ -93,11 +93,12 @@ Missed accounting for deployment challenges and setting up CI/CD pipelines early
 ---
 
 ### 4. Process Management and Observations
+We used a kanban board to keep track of our backlog, read, in progress, review, and done issues. This gave us a nice visualization to show our progress and what still needs to be done. We would, once a week, meet with the team and discuss what needed to be done for the next week to hit our goals and meet for the milestone with the TA -- we would use the kanban board as a resource during this meeting.
 
 ---
 
 ### 5. IDE and Environment Issues  
-We encountered minor issues with differing IDE setups, resolved by agreeing on shared configurations.  
+We encountered minor issues with differing IDE setups, especially when it came to different OS. There were some minor tweaks here and there but overall, the system runs smoothly no matter the OS and IDE. We also all agreed to use VSC as our IDE so it made it easier to debug issues. 
 
 ---
 
