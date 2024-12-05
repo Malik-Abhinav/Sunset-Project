@@ -105,9 +105,12 @@ Initial estimations underestimated testing and debugging time. Future estimates 
 ---
 
 ### 7. Unique Contribution and Learning
-In our project, one of the most unique challenges we faced was integrating the Clerk.io API for authentication. For a long time, it wasn't working correctly, and we kept encountering errors that were difficult to diagnose. After extensive debugging and scouring online forums, we discovered the issue: our system clocks were slightly desynchronized off by just two seconds.
+In our project, one of the most unique challenges we faced was integrating the Clerk.io API for authentication. For a long time, it wasn't working correctly, and we kept encountering errors that were difficult to diagnose. After extensive debugging and scouring online forums, we discovered the issue: windows 10 time was slightly desynchronized off by just two seconds.
 
-Since Clerk.io generates authentication keys that are only valid for a few seconds, our keys were expiring before they could be used, making authentication fail every time. This was a big learning moment for us. It taught us that not all issues are logical or syntax-based. Sometimes, the problems lie outside the code, in areas like system settings or environment configurations. This experience emphasized the importance of looking beyond the obvious and reinforced the value of persistence and thorough investigation in problem-solving.
+Since Clerk.io generates authentication keys that are only valid for a few seconds, our keys were expiring before they could be used, making authentication fail every time. This was a big learning moment for us. In the end it was a simple fix. All we had to do is synchronize our times on windows and the everything was working as expected.
+
+
+It taught us that not all issues are logical or syntax-based. Sometimes, the problems lie outside the code, in areas like system settings or environment configurations. This experience emphasized the importance of looking beyond the obvious and reinforced the value of persistence and thorough investigation in problem-solving.
 
 ---
 
