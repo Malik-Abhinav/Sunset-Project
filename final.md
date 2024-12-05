@@ -88,7 +88,7 @@ The initial requirements were detailed and sufficient. However, we overlooked th
 ---
 
 ### 3. Planning Gaps  
-Missed accounting for deployment challenges and setting up CI/CD pipelines early.  
+Missed accounting for deployment challenges and setting up CI/CD pipelines early. We also did not account much for other classes and responsibilities for our team members. This made it difficult when we had super busy weeks but we still had to stay on track for the weekly milestones.  
 
 ---
 
