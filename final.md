@@ -78,6 +78,8 @@ To deploy:
 
 ### 1. Project Management  
 
+For project management, we used a combination of Kanban and weekly sprints. The Kanban board allowed us to visualize the flow of tasks and prioritize work, while the weekly sprints kept us on track and ensured steady progress. The hardest part was integrating the Stream Chat API with user authentication, as it required managing state across multiple components. Also, none of us have used StreamChat before so it required some time to research documentation and videos to help with integrating into our project. In the future, we would focus more on detailed planning in the early stages to address edge cases, and improve our documentation to make collaboration smoother.
+
 ---
 
 ### 2. Requirements  
