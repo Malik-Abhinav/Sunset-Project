@@ -83,7 +83,9 @@ For project management, we used a combination of Kanban and weekly sprints. The 
 ---
 
 ### 2. Requirements  
-The initial requirements were detailed and sufficient. However, we overlooked the time needed for testing and minor UI enhancements.  
+We believe that the requirements were detailed but we may have overlooked a few things. For example, we probably should have done some research on audio channels before making them a requirement. We ended up not implementing it but the requirement could be a future one that we end up implementing on our own time. 
+
+Our requirements were sufficient but we should have done a slightly deeper analysis on all of our requirements in order to make sure that they were feasable in the time frame given. We could have listed some future requirements and moved the audio channel requirement to that section.
 
 ---
 
@@ -103,7 +105,9 @@ We encountered minor issues with differing IDE setups, especially when it came t
 ---
 
 ### 6. Effort Estimation  
-Initial estimations underestimated testing and debugging time. Future estimates will account for these.  
+Initial estimations underestimated testing and debugging time. In the future, we have discussed that testing and debugging should always be estimated with a large cushion. This gives the development team enough time to debug and also have enough time to implement new features.
+
+We also have seen this issue in other projects/teams so we think that this is a common issue of estimation.
 
 ---
 
