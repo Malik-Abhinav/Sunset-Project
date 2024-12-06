@@ -2,7 +2,7 @@
 
 ## Video Walkthrough  
 A video walkthrough of our project showcasing the implemented features, system architecture, and deployment process is available at the following link:  
-[**Video Walkthrough Link**]()  
+[Discord Clone Demo](https://youtu.be/j640v_kySnI)  
 
 ---
 
