@@ -83,8 +83,9 @@ Our team followed a **feature-branch workflow**:
 
 ### 3. Deployment  
 
-Right now, we can deploy our app using a NodeJS deployer that would be able to deploy a Node application. Our application was only able to be dockerized from a very high level so in the future, we'd want to try and dockerize the front and backend of our application in order to take advantage
-of the benefits of docker/containerization. This would allow the application to run consistently across different platforms and provide a failsafe in case of an erorr. If the backend has an error then it won't take down the whole application.
+Our application is fully dockerized and tested for a development environment. It contains a Dockerfile and docker-compose file which defines some instructions on building an image and allows us to configure and manage our docker application, respectively. The Dockerfile uses a lightweight node image, installs dependencies, and runs the application using 'npm run dev'. 
+
+To deploy, we run docker-compose up which will build and run the container which will make it accessible at localhost:3000. 
 
 
 ---
