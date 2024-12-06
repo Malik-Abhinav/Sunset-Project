@@ -85,7 +85,7 @@ Our team followed a **feature-branch workflow**:
 
 Our application is fully dockerized and tested for a development environment. It contains a Dockerfile and docker-compose file which defines some instructions on building an image and allows us to configure and manage our docker application, respectively. The Dockerfile uses a lightweight node image, installs dependencies, and runs the application using 'npm run dev'. 
 
-To deploy, we run docker-compose up which will build and run the container which will make it accessible at localhost:3000. 
+To deploy, we run docker-compose up which will build and run the container which will make it accessible at localhost:3000. In our docker-compose, we mount the current directory to the app directory inside the container (where the app is held). Therefore, when changes are made in the code, it will be reflected in real time in the container.
 
 
 ---
