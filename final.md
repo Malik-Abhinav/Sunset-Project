@@ -2,7 +2,7 @@
 
 ## Video Walkthrough  
 A video walkthrough of our project showcasing the implemented features, system architecture, and deployment process is available at the following link:  
-[**Video Walkthrough Link**](https://your-video-link.com)  
+[**Video Walkthrough Link**]()  
 
 ---
 
@@ -10,9 +10,25 @@ A video walkthrough of our project showcasing the implemented features, system a
 
 ### 1. What did your team build?  
 We built a simplified Discord clone, a web-based communication platform designed for real-time messaging and user interaction. The key features include:  
-- **Authentication:** Users can sign up, log in, and log out.  
-- **Messaging:** Real-time messaging with multiple channels.  
-- **UI/UX Design:** An intuitive and responsive interface.  
+#### a. Authentication  
+- Integrated a secure authentication system using **Clerk**, allowing users to:  
+  - Sign up with an email or supported third-party services.  
+  - Log in with their credentials for a seamless experience.  
+  - Log out securely when their session ends.  
+
+#### b. Real-Time Messaging  
+- Implemented real-time messaging capabilities, enabling users to:  
+  - Send and receive messages in **dedicated channels** instantly.  
+  - Switch between channels without losing context.  
+
+#### c. Channel-Based Communication  
+- Created **multiple channels**, allowing users to organize discussions by topic or purpose.  
+- Designed functionality to create channels and categories
+
+#### d. UI/UX Design  
+- Built an **intuitive and responsive interface** using **Next.js** with a focus on:  
+  - Clean navigation to access channels and settings effortlessly.  
+  - A visually appealing layout inspired by Discord’s simplicity while adding our unique touch.  
 
 ---
 
@@ -22,10 +38,8 @@ We built a simplified Discord clone, a web-based communication platform designed
 | Authentication         | Complete                   | Using Clerk for seamless integration.  
 | Real-time Messaging    | Complete                   | Fully functional utilizing Stream.  
 | Server and Channel Creation    | Complete                   | Fully functional using APIs, Next.js, and Tailwind CSS
-| CI/CD Pipeline         | Complete                   | Tested and operational.  
-| Dockerization          | Complete                   | Ready for deployment with Docker.  
+| Notification System | Complete | Visual cues for new notifications implemented
 
-All initial requirements were delivered as planned, and our requirements sufficiently captured project details.  
 
 ---
 
@@ -38,7 +52,11 @@ The system uses a **client-server architecture** with the following components:
 ---
 
 ### 4. Code Reuse  
-The project extensively reused shared utility functions, design pattern implementations, and third-party libraries. This streamlined development and reduced redundancy.  
+Our team achieved a moderate to high degree of code re-use by leveraging third-party libraries. The focus was on minimizing redundant code and utilizing pre-existing solutions where appropriate.
+
+- Authentication with Clerk: We utilized the Clerk authentication library, which provided robust and pre-built components for user sign-up, log-in, and session management. This saved significant development time while ensuring secure and reliable authentication.
+- Channel Management: Instead of building real-time messaging and state synchronization from scratch, we used well-supported libraries to handle WebSocket connections and updates efficiently.
+- UI Components: Pre-built UI libraries were used for styling and responsiveness, ensuring that the interface adhered to modern design standards without creating components from the ground up.
 
 ---
 
@@ -50,16 +68,16 @@ There are no major tasks left in the backlog. The remaining items are minor enha
 ## CI/CD  
 
 ### 1. Testing Strategies  
-- **Unit Tests:** Automated with Jest for all core modules.  
-- **Integration Tests:** End-to-end tests for key workflows.  
-- **Future Improvements:** Increase test coverage earlier in development to minimize debugging overhead.  
+- **Unit Tests:** Components that could be tested using mocking were tested using the Jest library.
+- **Integration Tests:** End-to-end tests for key workflows. Due to the nature of the project, this was mostly done by running the application and verifying the added functionality works as well as old functionality. 
+- **Future Improvements:** Increase test coverage and establish automated testing earlier in development to minimize debugging overhead.  
 
 ---
 
 ### 2. Branching Workflow  
 Our team followed a **feature-branch workflow**:  
-- Each branch underwent code reviews via pull requests.  
-- Merging was smooth with minimal conflicts.  
+- Each branch underwent code reviews via detailed pull requests and requiring approvals from the rest of the development team.  
+- Workflow and merging was smooth with minimal to no conflicts established through good communication and distribution of tasks.  
 
 ---
 
@@ -119,6 +137,6 @@ It taught us that not all issues are logical or syntax-based. Sometimes, the pro
 ---
 
 ### 8. AI's Impact  
-The impact of AI in our project was mainly used for debugging. AI helped us understand the error messages and possible causes that pointed us to the correct direction on where to make the changes which resulted in an easier debugging process.
+The impact of AI in our project was mainly used for debugging. AI helped us understand the error messages and possible causes that pointed us to the correct direction on where to make the changes which resulted in an easier debugging process. This was an extremely useful tool when working with unknown libraries as, even with good documentation, we needed to understand where in the documentation to look which could only be done by understanding the error messages. This also helped us with minor UI improvements where a div would be hard to place in the layout.
 
 ---
