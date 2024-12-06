@@ -9,7 +9,7 @@ export default function CustomChannelList(): JSX.Element {
     const {server, channelsByCategories} = useDiscordContext();
 
     return(<div className='w-72 bg-medium-gray h-full flex flex-col items-start'>
-        <ChannelListTopBar serverName = {server?.name || 'Direct Messages'}/>
+        <ChannelListTopBar serverName = {server?.name || 'All Channels'}/>
             <div className='w-full'>
                 {Array.from(channelsByCategories.keys()).map((category, index) => (
             <CategoryItem
