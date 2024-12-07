@@ -39,6 +39,7 @@ We built a simplified Discord clone, a web-based communication platform designed
 | Real-time Messaging    | Complete                   | Fully functional utilizing Stream.  
 | Server and Channel Creation    | Complete                   | Fully functional using APIs, Next.js, and Tailwind CSS
 | Notification System | Complete | Visual cues for new notifications implemented
+| Audio Channels | Incomplete | 
 
 
 ---
