@@ -1,92 +1,115 @@
-This project was originally developed as part of a university course and later published as an independent public repository for portfolio purposes.
+> This project was originally developed as part of a university course and later published as an independent public repository for portfolio purposes.
 
+# 💬 Discord Clone Dashboard
 
-💬 Discord Clone Dashboard
+A high-fidelity Discord-style chat application built with **Next.js 15**, **Stream Chat SDK**, and **Tailwind CSS**.  
+The project focuses on real-time messaging, server and channel organization, and a custom UI that mirrors the core Discord experience.
 
-A high-fidelity Discord clone built with Next.js 15, Stream Chat SDK, and Tailwind CSS. This project features real-time messaging, server/channel management, and a custom UI designed to replicate the core Discord experience.
+---
 
-🚀 Key Features
+## 🚀 Key Features
 
-Real-time Messaging: Powered by Stream Chat for sub-millisecond message delivery and typing indicators.
+- **Real-time Messaging**  
+  Powered by Stream Chat for low-latency message delivery and typing indicators.
 
-Server & Channel Management: Create and join servers with distinct text channels. Supports category-based organization.
+- **Server and Channel Management**  
+  Create and join servers with multiple text channels and category-based organization.
 
-Custom UI Components: Hand-crafted components for message reactions, custom headers, and the iconic Discord sidebar navigation.
+- **Custom UI Components**  
+  Hand-crafted components including message reactions, custom headers, and Discord-style sidebar navigation.
 
-Authentication & User Sync: Secure token generation and user registration via Next.js API routes.
+- **Authentication and User Sync**  
+  Secure token generation and user registration via Next.js API routes.
 
-Interactive Messaging: Support for emoji reactions, file uploads, and threaded conversations.
+- **Interactive Messaging**  
+  Emoji reactions, file uploads, and threaded conversations.
 
-Containerized Environment: Fully Dockerized setup for consistent development and deployment.
+- **Containerized Environment**  
+  Fully Dockerized setup for consistent development and deployment.
 
-🛠 Tech Stack
+---
 
-Frontend: Next.js 15 (App Router), React 19, TypeScript.
+## 🛠 Tech Stack
 
-Styling: Tailwind CSS, Lucide React (Icons).
+- **Frontend:** Next.js 15 (App Router), React 19, TypeScript  
+- **Styling:** Tailwind CSS, Lucide React  
+- **Chat Backend:** Stream Chat SDK (GetStream)  
+- **API:** Next.js Serverless Functions (TypeScript)  
+- **DevOps:** Docker, Docker Compose  
 
-Chat Backend: Stream Chat SDK (GetStream).
+---
 
-API: Next.js Serverless Functions (TypeScript).
+## 📂 Project Structure
 
-DevOps: Docker, Docker Compose.
+- **/app**  
+  Next.js App Router logic and API endpoints (`/api/token`, `/api/register-user`)
 
-📂 Project Structure
+- **/components**  
+  Modular UI components (`ServerList`, `ChannelList`, `MessageList`)
 
-/app: Next.js App Router logic and API endpoints (/api/token, /api/register-user).
+- **/context**  
+  Global state management for Discord-specific data
 
-/components: Modular UI components (ServerList, ChannelList, MessageList).
+- **/hooks**  
+  Custom hooks for Stream Chat client initialization
 
-/context: Global state management for Discord-specific data.
+- **/models**  
+  TypeScript interfaces and definitions for servers and users
 
-/hooks: Custom hooks for Stream Chat client initialization.
+---
 
-/models: TypeScript interfaces and definitions for servers and users.
+## 🏃‍♂️ Getting Started
 
-🏃‍♂️ Getting Started
+### Prerequisites
 
-Prerequisites
+- Node.js 18+ or Docker  
+- A Stream Chat API key and secret  
 
-Node.js 18+ or Docker.
+### Environment Variables
 
-A Stream Chat API Key and Secret.
+Create a `.env.local` file in the root directory:
 
-Environment Variables
-
-Create a .env.local file in the root directory:
-
+```env
 NEXT_PUBLIC_STREAM_API_KEY=your_api_key
 STREAM_API_SECRET=your_api_secret
+```
 
-
-Installation
+### Installation
 
 Clone the repository:
 
+```bash
 git clone <your-repo-link>
 cd discord-clone
+```
 
+Run with Docker (recommended):
 
-Run with Docker (Recommended):
-
+```bash
 docker-compose up --build
+```
 
+Run locally:
 
-Run Locally:
-
+```bash
 npm install
 npm run dev
+```
 
+The application will be available at **http://localhost:3000**.
 
-The app will be available at http://localhost:3000.
+---
 
-🧪 Testing
+## 🧪 Testing
 
-The project includes unit and integration tests for API routes and middleware using Vitest/Jest.
+The project includes unit and integration tests for API routes and middleware using **Vitest** and **Jest**.
 
+```bash
 npm run test
+```
 
+---
 
-📝 License
+## 📝 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
